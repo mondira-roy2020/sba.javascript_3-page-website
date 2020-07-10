@@ -1,19 +1,53 @@
 body {
-  min-height: 100 vh;
+  
   display: flex;
   align-items: center;
   justify-content: center;
-  background: url('/img/background.jpg') center/cover no-repeat;
+  background: url('/img/background1.jpg') center/cover no-repeat;
+}
+
+header {
+  background: #999;
+  color:white;
+  margin:0;
+  padding : 15px 0;
+  display:inline;
+  position: absolute;
+  top: 80%;
+  left:36%;
+}
+
+nav ul{
+  margin:10;
+  display:inline;
+  padding:30px;
+
+}
+
+nav ul li {
+  list-style-type: none;
+  display:inline-block;
+  object-position: top;
+  background:black;
+  color: white;
+  padding: 10px 10px;
+  margin:5px;
+
+}
+
+nav ul li a {
+  color: white;
 }
 
 .images {
   background:#999;
   flex: 0 0 50%;
-  min-height: 50vh;
+  min-height: 70vh;
   background: url('/img/rushmore.jpg') center/contain no-repeat;
   border-radius: 15px;
-  box-shadow:5px 10px darkgray;
+  /* box-shadow:5px 10px darkgray; */
   position: relative;
+
 }
 
 .btn {
@@ -41,4 +75,7 @@ body {
   top:50%;
   right:0;
   transform:translate(50%, -50%);
+}
+footer {
+  clear:both;
 }

@@ -18,5 +18,9 @@ function nextPic() {
 }
 
 function prevPic(){
-
+    if (counter === 0){
+        counter= 10;
+    }
+    counter--;
+    container.style.backgroundImage = `url(/img/president-${counter}.jpg)`
 }
